@@ -1,4 +1,3 @@
-```python
 import importlib
 import torch
 import pickle
@@ -98,5 +97,3 @@ def create_samplers(config, dataset, built_datasets, cold=False):
         cold_sampler = _create_sampler(dataset, built_datasets, config["test_neg_sample_args"]["distribution"], config["repeatable"], base_sampler=train_sampler)
         return train_sampler, valid_sampler, test_sampler, cold_sampler
     return train_sampler, valid_sampler, test_sampler
-```
-
