@@ -51,7 +51,14 @@ def main():
     memory_bank = MemoryBank(data_loader)
 
     # Initialize trainer and run
-    trainer = Trainer(config, data_loader, memory_bank)
+    trainer = Trainer(
+        config=config,
+        data_loader=data_loader,
+        memory_bank=memory_bank,
+        prompt_bank=prompt_bank,
+        bos_token='|beginoftext|',
+        eos_token='|endoftext|'
+    )
     trainer.run()
 
 if __name__ == "__main__":
