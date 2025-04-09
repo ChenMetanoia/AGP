@@ -43,17 +43,15 @@ Key hyperparameters for fine-tuning are defined in the third cell (# Configurati
 
 ## Getting Started
 To use AGP, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   ```
+1. Download the repository:
+
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 3. Run an example experiment:
    ```bash
-   python prompt_optimize_movie_recommendation.py --llm_model gpt-4o-mini-2024-07-18 --cot 1 --task_name Movies_and_TV --minimum_train 0 --verify_steps 1 --hist_seq_length 5 --use_distance 0 --batch_size 10
+   python main.py --llm_model gpt-4o-mini-2024-07-18 --cot 1 --task_name Movies_and_TV --minimum_train 0 --verify_steps 1 --hist_seq_length 5 --use_distance 0 --batch_size 10
    ```
 
 ---
