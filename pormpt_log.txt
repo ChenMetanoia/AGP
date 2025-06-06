@@ -1,0 +1,100 @@
+1. original prompt:
+
+First priority: Consider users' favorite movie genres.
+Second priority: Consider users' favoratie movie years.
+Third priority: Consider users' favoratie director and actors.
+--------------------------------
+
+2. updated prompt:
+First priority: Consider users' favorite movie genres and the importance of familiarity with specific franchises. 
+Second priority: Consider users' historical interactions with particular titles, directors, and actors to identify strong engagement patterns. 
+Third priority: Recognize the significance of item specifics, such as iconic content, unique features, and the nostalgia or thematic preferences they represent based on user history.
+
+--------------------------------
+3. updated prompt:
+First priority: Prioritize items that closely align with the user's demonstrated preferences for genre-specific features, particularly those reflecting a strong emotional engagement, unique narratives, or notable franchises that the user has favorites in. 
+Second priority: Assess the historical interactions not just for direct matches but also for the emotional resonance and action or thematic elements that have led to previous high engagement, thereby optimizing the alignment with items that may not have been historically prominent but are crucial for the user's enjoyment. 
+Third priority: Incorporate user-specific preferences for unique presentations, nostalgia, or strong thematic connections that transcend general user interaction patterns to ensure the Ground-truth Item's unique appeal and significance to the user are adequately considered in the ranking.
+--------------------------------
+4. updated prompt:
+First priority: Rank items that reflect the user's personal connections to specific themes, characters, or lead actors that resonate emotionally, particularly focusing on nostalgia or iconic franchises indicated in their historical interactions.  
+Second priority: Evaluate the significance of items that align with the user's ongoing engagement patterns, emphasizing not just popularity but deeper connections based on past likes, ensuring that emotionally impactful narratives and character-driven stories are favored even if they are less recent or popular.  
+Third priority: Prioritize the unique aspects of the Ground-truth Item that correspond to the user's favoring of genres or themes from their interaction history, ensuring that significant emotional narratives or studio reputations are taken into account, especially for titles with strong historical or nostalgic value, thereby enhancing the relevance and enjoyment for the user.
+--------------------------------
+5. updated prompt:
+First priority: Rank items that align most closely with the user's explicitly expressed preferences, ensuring that favorites from prior interactions, especially collectible editions and iconic films, are identified first.
+
+Second priority: Give priority to films featuring key actors and directors that the user has shown a strong affinity for, emphasizing titles linked to these individuals that resonate with their history, particularly focusing on nostalgic or collectible items they might appreciate.
+
+Third priority: Carefully consider the thematic and genre appeals of items, prioritizing selections that not only match user preferences but also those that resonate strongly due to nostalgia, such as cult classics or iconic titles.
+
+Fourth priority: Factor in the timeframe and historical significance of films, ensuring that those representing cherished eras or milestone moments in cinema that align with user engagement are ranked higher.
+
+Fifth priority: Analyze the user's entire interaction history holistically, moving beyond immediate genre overlaps to identify latent preferences, ensuring that items reflecting deeper emotional connections or unique interests are not overshadowed by similar, yet less favored titles.
+--------------------------------
+6. updated prompt:
+1. Place immediate emphasis on niche elements within the user's favorite genres, such as unique formats (e.g., fully loaded DVDs and special editions) that may reflect their deeper interest within those categories. These niche elements should not be overlooked even if they initially appear minor compared to broader genre preferences.
+   
+2. Integrate consideration for specific actors or directors not explicitly mentioned in the user profile but who may indicate an implicit interest through the user's appreciation for character-driven narratives or high-intensity experiences typical to those professionals' works.
+
+3. Investigate temporal alignment beyond general favorite years, including more specific engagement with certain industry eras (e.g., the VHS-era) and assess these against user's affinity for older or classic content. This includes recognizing trends within certain decades that match user interests.
+
+4. Acknowledge how broader themes or subgenres (such as police procedural, drama series continuity, or classic cinema) provide a framework supporting user's deeper connection with certain items, suggesting the presence of nuanced interests not solely dictated by primary genre preferences.
+
+5. Finally, balance and reinterpret the user’s expressed preferences and refined interests with the potential for unique experiences extended by the item's specific attributes that may not always be prominent in the user's explicit profile but align with their demonstrated or inferred tastes.
+--------------------------------
+7. updated prompt:
+When reranking items, prioritize according to these refined factors based on the user's preferences:
+
+1. Ensure prioritization of items featuring elements that have shown implicit user interest, such as movies starring specific actors or directors (e.g., Richard Dreyfuss, Bill Paxton) or unique narrative styles (e.g., high-action content directed by David Leitch or critical acclaim in Studio Special items like "The Village").
+
+2. Enhance temporal relevance by emphasizing items that resonate with the user's demonstrated affinity for specific decades or eras, such as classic 1980s-1990s TV series or films, even when broader genre preferences are missing (e.g., "Dynasty Season 8").
+
+3. Account for nuanced connections between users' secondary interests and item characteristics, like format preferences (VHS, Fully Loaded DVDs), which may reflect deeper cultural or nostalgic ties beyond primary genre alignments.
+
+4. Address broader thematic alignments by considering secondary user interests demonstrated through related subgenres or thematic elements the user gravitates towards, such as cult cinema, horror aesthetics linked to specific actors, or high-action narratives.
+
+5. Balance between explicit declared preferences and inferred interests by exploring potential overlaps where unique film attributes or creative elements might appeal to users outside their primary genre but align with secondary or historical viewing inclinations.
+
+6. Prioritize items that stand out due to notable actor involvement or directorial influence recognized by the user, ensuring the user's appreciation for compelling acting performances and unique filmmaking styles takes precedence over simple genre classification. 
+
+7. Open opportunities for unique experience extensions by delving deeper into item-specific attributes (e.g., special editions or formats) that may offer the user a richer appreciation and align better with their personal film history, as evidenced by nostalgic or critical engagement.
+
+With multiple steps after...
+--------------------------------
+Final prompt:
+### Streamlined Reranking Approach for Enhanced User Preference Alignment
+
+**1. Broadening Item Appeal Beyond Explicit Preferences:**
+- Recognize the value of item attributes like format and packaging when users appreciate contemporary editions, as seen in "It's Complicated." Elevate items with standout presentation even in the absence of explicitly favored actors or genres.
+
+**2. Diverse Content Type Accommodation:**
+- Consider users' secondary interests. Align rankings with varying content forms, such as adventure narratives in "Wild," by acknowledging interests in high-quality releases and popular actors, even when primary user sectors lean towards non-fictional works.
+
+**3. Franchise Recognition Balance:**
+- Capture thematic connections to iconic series while managing actor prominence preferences. Prioritize genre and series affinity in well-known series like "Star Trek Enterprise" amidst actor-based preferences typically dominated by other series actors.
+
+**4. Genre Subtlety and Actor Favor Intersection:**
+- Recognize user penchant for modern production and lead actor appeal, such as in "Lucy," by placing importance on science fiction and action elements regardless of specific director or actor mentions in user profiles.
+
+**5. Nuanced Horror and Drama Synthesis:**
+- Identify user affinity for mixed-genre appeals with items like "The Visit" by considering historical preference for drama alongside primary genre interests, ensuring diverse cast valuation despite non-aligned favorites.
+
+**6. Animation Interest with Genre Compatibility:**
+- Balance ranking between animation-enriched items and science fiction/fantasy favorites, evident in "Watchmen," by connecting genre interests with actor appeal even when faced with prominent animation mentions in the user profile.
+
+**7. Classic Appeal versus Contemporary Genre Preferences:**
+- Harmonize classic Disney items like "Lady & the Tramp" with modern user preferences without ignoring foundational appeal, capitalizing on affinity for timeless productions while keeping current genre prominence in focus.
+
+
+
+User profile with initial prompt
+    {
+        "user_historical_items": "The Tigger Movie.;Jim Cummings.;Movies & TV Musicals & Performing Arts Musicals.\nWhat Women Want.;Mel Gibson.;Movies & TV Paramount Home Entertainment Comedy.\nIn & Out VHS.;Kevin Kline.;Movies & TV Paramount Home Entertainment Comedy.\nA Walk in the Clouds VHS.;Keanu Reeves.;Movies & TV Studio Specials 20th Century Fox Home Entertainment All Fox Titles.",
+        "generated_profile": "**User Profile**\n\n**Preferred Genres:**\n- Musicals & Performing Arts\n- Comedy\n\n**Favorite Actors/Actresses:**\n- Jim Cummings\n- Mel Gibson\n- Kevin Kline\n- Keanu Reeves\n\n**Item Types:**\n- Movies and TV shows, particularly those related to musicals and comedic themes.\n\n**Content Preferences:**\n- Enjoys family-friendly and light-hearted content (indicated by the preference for musicals and comedies).\n- Shows an inclination towards classic and notable films, as suggested by interactions with titles from well-known studios like Paramount and 20th Century Fox.\n\n**Summary:**\nThe user has a fondness for comedic films and musicals, often engaging with family-oriented content. Their historical interactions suggest a preference for movies featuring well-known actors from the comedy genre. They likely appreciate light-hearted, entertaining narratives that can provide a feel-good viewing experience."
+    },
+User profile with refined prompt
+        {
+        "user_historical_items": "Traitor.;Don Cheadle.;Movies & TV Fully Loaded DVDs DTS.\nLost Highway (Widescreen Edition).;.;Movies & TV Widescreen Drama.\nWalking Dead, The Ssn 5.;.;Movies & TV Genre for Featured Categories Horror.\nBand of Brothers(Elite SC/BD+DCExp12-21).;Various.;Movies & TV HBO All HBO Titles.\nGeneration Kill.;Various.;Movies & TV HBO All HBO Titles.\nSpartacus: Gods of the Arena.;John Hannah.;Movies & TV Blu-ray TV.\nOutlander - Season 1.;Caitriona Balfe.;Movies & TV Studio Specials Sony Pictures Home Entertainment All Sony Pictures Titles.",
+        "generated_profile": "**User Profile:**\n\n- **Primary Interests:**\n  The user shows a strong preference for movies and television series, particularly those that fall into the drama and horror genres. They have also expressed interest in high-quality formats such as Blu-ray and widescreen editions, indicating a preference for superior viewing experiences.\n\n- **Genres of Preference:**\n  - Drama: The user has engaged with several titles in this genre, such as \"Lost Highway\" and \"Outlander - Season 1.\"\n  - Horror: They have interacted with horror-related content, notably \"Walking Dead, The Ssn 5.\"\n  - War/Historical: Titles like \"Band of Brothers\" and \"Generation Kill\" suggest an interest in war-themed narratives.\n  - Action/Fantasy: The inclusion of \"Spartacus: Gods of the Arena\" indicates a liking for action-packed or fantasy series with historical elements.\n\n- **Formats/Media Types:**\n  - The user prefers physical media, as indicated by interactions with DVD and Blu-ray titles.\n  - They appear to lean towards collectible or deluxe editions of shows and movies, suggesting a desire for completeness or enriched content (e.g., \"Band of Brothers(Elite SC/BD+DCExp12-21\").\n\n- **Actor Preferences:**\n  - The user has engaged with works featuring actors like Don Cheadle and Caitriona Balfe, indicating potential actor-based preferences that might influence their selection of future titles.\n\n- **Brand/Studio Preferences:**\n  - Preference for HBO content is evident through the involvement with multiple HBO titles, showing a proclivity for high-quality productions associated with the network.\n  - The user also demonstrates interest in Sony Pictures content, which may indicate a broader preference for titles from well-known and reputable studios.\n\nOverall, the user profile highlights a focused interest in dramatic and horror-themed content, with a tendency towards high-quality physical media, actor recognition, and specific studio affiliations."
+    },
